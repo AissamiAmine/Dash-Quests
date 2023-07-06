@@ -1,9 +1,8 @@
 import pandas as pd
-import plotly.express as px
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Input, Output
+from dash import dcc
+from dash import html
+import plotly.express as px
 
 
 url = 'https://raw.githubusercontent.com/chriszapp/datasets/main/books.csv'
@@ -45,8 +44,5 @@ def update_graph(variable1, variable2):
 
 # Lancer l'application Dash
 if __name__ == '__main__':
-    from pyngrok import ngrok
-
-    # Exposer l'application sur un lien externe
-    app.run_server(mode='external')
+    app.runserver(debug=True)
 
