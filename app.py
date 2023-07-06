@@ -12,7 +12,7 @@ df = pd.read_csv(url, on_bad_lines='skip')
 # Créer Dash
 app = dash.Dash(__name__)
 
-#  le graphique 
+#  le graphique
 fig = px.scatter(df, x='average_rating', y='ratings_count', hover_data=['title'])
 
 # Définir la mise en page de l'application
