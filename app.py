@@ -3,6 +3,7 @@ import dash
 from dash import dcc
 from dash import html
 import plotly.express as px
+from dash.dependencies import Input, Output
 
 
 url = 'https://raw.githubusercontent.com/chriszapp/datasets/main/books.csv'
