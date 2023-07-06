@@ -45,5 +45,5 @@ def update_graph(variable1, variable2):
 
 # Lancer l'application Dash
 if __name__ == '__main__':
-    app.runserver(debug=True)
+    app.run_server(debug=True)
 
